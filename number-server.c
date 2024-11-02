@@ -40,7 +40,7 @@ void handle_response(char *request, int client_sock) {
         return;
     }
 
-    if(strcmp(path,"GET /shownum") == 0){
+    if(strcmp(path,"/shownum") == 0){
         handle_shownum(client_sock,path);
         return;
     }
